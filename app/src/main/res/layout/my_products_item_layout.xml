@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="7dp"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity=""
+        android:orientation="horizontal">
+
+    <com.curryoutseller.RoundRectCornerImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/chicken"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:id="@+id/ln_addProduct"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_marginStart="12dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorFour"
+            android:textSize="15sp"
+            android:text="Happy Meal"/>
+
+        <TextView
+            android:id="@+id/txt_subTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTwo"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:text="Fast Food"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:text="@string/Rs"/>
+
+            <TextView
+                android:id="@+id/txt_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="3dp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:text="INR 120"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+              <ImageView
+                  android:layout_width="20dp"
+                  android:layout_height="20dp"
+                  android:background="@drawable/edit_icon"
+                  android:id="@+id/img_editProduct"
+                  />
+
+              <ToggleButton
+                  android:id="@+id/toggleButton1"
+                  android:textOff=""
+                  android:textOn=""
+                  android:layout_marginStart="10dp"
+                  android:layout_width="38dp"
+                  android:layout_height="20dp"
+                  android:background="@drawable/toggle_button_background"/>
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorThree"/>
+
+</LinearLayout>
